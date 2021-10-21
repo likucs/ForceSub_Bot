@@ -55,7 +55,7 @@ def _check_member(client, message):
         try:
           sent_message = message.reply_photo(
             photo="https://telegra.ph/file/7cfb09d344bdbe70a6367.jpg",
-            caption="{} , you are not subscribed to my channel yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
+            caption="**Hey [{}](tg://user?id={})**\n you are not subscribed to my channel yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
               parse_mode="Markdown",
              reply_markup=InlineKeyboardMarkup(
             [
