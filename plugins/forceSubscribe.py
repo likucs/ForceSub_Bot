@@ -57,7 +57,7 @@ def _check_member(client, message):
             photo="https://telegra.ph/file/7cfb09d344bdbe70a6367.jpg",
             caption="**Hey [{}](tg://user?id={})**\n you are not subscribed to my channel yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
               parse_mode="Markdown",
-              disable_web_page_preview=True
+              disable_web_page_preview=True,
              reply_markup=InlineKeyboardMarkup(
             [
                 [
