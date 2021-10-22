@@ -1,5 +1,7 @@
 import time
 import logging
+import os
+import sys
 from Config import Config
 from pyrogram import Client, filters
 from sql_helpers import forceSubscribe_sql as sql
@@ -57,7 +59,6 @@ def _check_member(client, message):
             photo="https://telegra.ph/file/7cfb09d344bdbe70a6367.jpg",
             caption="**Hey [{}](tg://user?id={})**\n you are not subscribed to my channel yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
               parse_mode="Markdown",
-              disable_web_page_preview=false,
              reply_markup=InlineKeyboardMarkup(
             [
                 [
